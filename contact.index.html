@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design - Afthab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.index.html">ABOUT</a></li>
+                    <li><a href="course.index.html">COURSE</a></li>
+                    <li><a href="blog.index.html">BLOG</a></li>
+                    <li><a href="contact.index.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+    <!-- ---------- Contact Us ---------  -->
+
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15542.916468565169!2d77.6352927!3d13.1163393!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdee225fe28f600f6!2sREVA%20University!5e0!3m2!1sen!2sin!4v1648233243508!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </section>
+
+    <section class="contact-us">
+
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>Kattigenahalli, Yelahanka.</h5>
+                        <p>Bangalore, Karnataka, India</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+917007984600</h5>
+                        <p>Monday to Friday, 8AM to 4PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>info@Shubham.com</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+
+                <form action="">
+                    <input type="text" placeholder="Enter Your Name" required>
+                    <input type="email" placeholder="Enter Your email address" required>
+                    <input type="" placeholder="Enter Your subject" required>
+                    <textarea rows="8" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                </form>
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- ----------Footer-------- -->
+
+    <section class="footer">
+        <h4>About Us </h4>
+        <p>The ethos of REVA University is driven to be future-ready and offer exemplary academic experience. The academic infrastructure at the University further boosts our mission.</p>
+        <div class="icons">
+            <a href="https://www.facebook.com/REVAUniversity"><i class="fa fa-facebook"></i></a>
+			<a href = "https://twitter.com/REVAuniversity"><i class="fa fa-twitter"></i></a>
+			<a href = "https://www.instagram.com/reva_university/"><i class="fa fa-instagram"></i></a>
+		<a href = "https://www.linkedin.com/school/reva-university/"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <p>Made by Utsav and team </p>
+    </section>
+
+
+
+
+
+
+
+    <!-- ----------JavaScript For Toggle Menu---------- -->
+
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
